@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Айтишка </title>
+        <link rel="icon" href="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fico.ico?v=1638553533218">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Murecho:wght@400;500&family=PT+Sans:ital@0;1&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </head>
+    <body class="modal-open">
+        <!-- ПАНЕЛЬ НАВИГАЦИИ -->
+        <nav class="navbar navbar-expand-md navbar-light" aria-label="Панель меню" id="id_main">
+            <div class="container-fluid">
+                <a class="navbar-brand pe-none fs-3 text-dark" href="#"><img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Flogo.png?v=1638553543807" width="100" class="d-inline-block align-text-center img_logo"> <span>детский сад «Айтишка» </span> </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#id_navbar" aria-controls="id_navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="id_navbar">
+                    <ul class="navbar-nav ms-auto align-items-end">
+                        <li class="nav-item showPoint">
+                            <a class="nav-link active me-3 fs-5" aria-current="page" href="#id_ourteam">Наша команда</a>
+                        </li>
+                        <li class="nav-item showPoint">
+                            <a class="nav-link active me-3 fs-5" aria-current="page" href="#id_news">Новости</a>
+                        </li>
+                        <li class="nav-item showPoint">
+                            <a class="nav-link active me-3 fs-5" aria-current="page" href="#id_contacts">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- ГЛАВНОЕ ОКНО -->
+        <div class="container-fluid d-flex flex-column justify-content-between div_main">
+            <!-- РАЗДЕЛ КНОПКА "ЗАПИСАТЬСЯ" -->      
+            <div class="row row_margin">
+                <div class="col div_callout_style d-flex flex-column justify-content-end align-items-start">
+                    <p class="invitation text fst-italic fs-4 bg_light_orange"> Приходите знакомиться! </p>
+                    <a href="#exampleModal" class="btn btn-lg fs-5 text-light border-0 button_callout" data-bs-toggle="modal" data-bs-target="#exampleModal" role="button">ЗАПИСАТЬСЯ</a>
+                </div>
+            </div>
+            <!-- РАЗДЕЛ СЕРОЙ ПОЛОСЫ И КУБИКОВ -->            
+            <div class="row row_blocks d-flex justify-content-center">
+                <div class="col d-flex flex-row justify-content-end p-0">
+                    <div class="card justify-content-between align-items-center rounded-0 card_oneblock m-2">
+                        <a href="#id_classes" class="stretched-link text-center text-decoration-none text-dark mt-2 mt-md-3 me-3 mb-1 ms-3"> <p class="m-0 p-0 p_height"> Группы </p> </a>          
+                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsym-1.png?v=1638554888739" class="img-fluid mt-1 me-4 mb-3 ms-4" style="height: 40px;" >          
+                    </div>
+                    <div class="card justify-content-between align-items-center rounded-0 card_oneblock m-2">
+                        <a href="#id_education" class="stretched-link text-center text-decoration-none text-dark mt-2 mt-md-3 me-3 mb-1 ms-3"> <p class="m-0 p-0 p_height"> Образование</p> </a>          
+                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsym-2.png?v=1638554896328" class="img-fluid mt-1 me-4 mb-3 ms-4" style="height: 40px;" >          
+                    </div>
+                </div>
+                <div class="col d-flex flex-row justify-content-start p-0">
+                    <div class="card justify-content-between align-items-center rounded-0 card_oneblock m-2">
+                        <a href="#id_art" class="stretched-link text-center text-decoration-none text-dark mt-2 mt-md-3 me-3 mb-1 ms-3"> <p class="m-0 p-0 p_height"> Творчество и спорт </p> </a>          
+                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsym-3.png?v=1638554904078" class="img-fluid mt-1 me-4 mb-3 ms-4" style="height: 40px;" >          
+                    </div>
+                    <div class="card justify-content-between align-items-center rounded-0 card_oneblock m-2">
+                        <a href="media.html" target="_blank" class="stretched-link text-center text-decoration-none text-dark mt-2 mt-md-3 me-3 mb-1 ms-3"> <p class="m-0 p-0 p_height"> Медиагалерея </p></a>          
+                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsym-4.png?v=1638554911708" class="img-fluid mt-1 me-4 mb-3 ms-4" style="height: 40px;" >          
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <!-- БЛОК "ПРИНЦИПЫ" -->
+        <div class="container-fluid m-0 p-0 mt-md-5">
+            <div class="row d-flex justify-content-between m-0">
+                <div class="col-md-6 order-md-3 d-flex flex-column justify-content-between m-0">
+                    <div class="row d-flex justify-content-center align-items-center p-2 p-sm-1 g-0">
+                        <div class="col-3 col-sm-2 me-4"><img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fprincip1.png?v=1638554783325" class="img-fluid img_principes p-0 m-0 g-0"> </div>
+                        <div class="col-6 col-sm-7 fs-5 fst-italic">взаимное уважение, дружба и взаимопомощь </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center p-2 p-sm-1 g-0">
+                        <div class="col-3 col-sm-2 me-4"> <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fprincip2.png?v=1638554793715" class="img-fluid img_principes p-0 m-0 g-0"> </div>
+                        <div class="col-6 col-sm-7 fs-5 fst-italic"> развитие в форме игры </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center p-2 p-sm-1 g-0">
+                        <div class="col-3 col-sm-2 me-4"> <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fprincip3.png?v=1638554838901" class="img-fluid img_principes p-0 m-0 g-0"> </div>
+                        <div class="col-6 col-sm-7 fs-5 fst-italic"> забота о себе и окружающей среде </div>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center p-2 p-sm-1 g-0">
+                        <div class="col-3 col-sm-2 me-4"> <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fprincip4.png?v=1638554848901" class="img-fluid img_principes p-0 m-0 g-0"> </div>
+                        <div class="col-6 col-sm-7 fs-5 fst-italic"> безопасность </div>
+                    </div>
+                </div>
+                <div class="col order-md-2 d-block d-sm-block d-md-none m-2">
+                    <!-- Скрытый столбец, отображается только в размере xs и sm как разделитель между двумя столбцами -->
+                </div>
+                <div class="col-md-6 order-md-1 m-0 p-0 g-0 align-self-center">
+                    <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fstudy.jpeg?v=1638554883018" class="img-fluid" alt="Айтишка">
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="container-fluid d-flex flex-column justify-content-center align-items-center mt-4 mb-4">
+            <hr class="w-100 mt-4 mb-5">
+            <div class="row d-flex align-items-center fs-5 mt-2 mb-2">
+                <div class="col text-center text-light mb-3 mb-sm-0" style="white-space: nowrap;"> ЕСТЬ ВОПРОСЫ? <br> С РАДОСТЬЮ ОТВЕТИМ!      
+                </div>
+                <div class="col d-flex justify-content-center">
+                    <a href="tel:8800-0000-000" class="text-dark text-decoration-none" style=" white-space: nowrap;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-inbound color_brown" viewBox="0 0 16 16">
+                            <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                        </svg>
+                        8800-0000-000
+                    </a>
+                </div>
+            </div>
+            <hr class="w-100 mt-5 mb-4">
+        </div>
+        <br><br>
+        <!-- ОСНОВНЫЕ ПУНКТЫ, ФОТО И НОВОСТИ -->
+        <div class="container-fluid">
+            <div class="row m-0 p-0 g-0 row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 d-flex justify-content-evenly align-items-stretch">
+                <div class="col col-md-7 col-lg-7 col-xl-3 d-flex flex-column justify-content-evenly pt-2 ps-1">
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint1_dark.png?v=1638555835574" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> График работы </b> с 07-00ч. до 19-00ч. </p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint2.png?v=1638553569897" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> Группы </b> до 10 человек </p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint3.png?v=1638607658867" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> Питание </b> четырехразовое с учетом индивидуальных особенностей ребенка </p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint4_dark.png?v=1638555842976" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> Ежедневный осмотр медработником </b> </p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint5.png?v=1638553599405" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> Видеонаблюдение </b> (онлайн) и охрана </p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint6.png?v=1638554765611" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> <b> Англоязычная среда </b></p>
+                        </div>
+                    </div>
+                    <div class="row m-0 mt-2 mt-md-0">
+                        <div class="col-2 mb-2">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint7.png?v=1638554773541" class="img-fluid" style="max-width: 35px;">
+                        </div>
+                        <div class="col">
+                            <p class="text"> Возможность пребывания воспитанников в <b> выходные и праздничные дни </b> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-5 col-lg-5 col-xl-3 d-flex flex-column justify-content-center align-items-center">
+                    <div id="carousel-two" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpic_us_16.jpeg?v=1638554986514" class="d-block img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpic_us_17.jpeg?v=1638554992396" class="d-block img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpic_us_18.jpeg?v=1638554998393" class="d-block img-fluid">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpic_us_19.jpg?v=1638555005789" class="d-block img-fluid">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-two" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-two" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col col-md-12 col-lg-12 col-xl-6 d-flex flex-column justify-content-evenly mt-5 mt-md-0" id="id_news">
+                    <div>
+                        <h3 class="mt-2 w-100 text-center color_brown"> Новости </h3>
+                        <hr style="margin-left: 2.5%; width: 95%;">
+                    </div>
+                    <div class="accordion w-100 ps-1 pe-1" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button bg_silver" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h6 class="color_brown"> 18 декабря - мастер-класс "Ёлочные игрушки из солёного теста"</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg_orange">
+                                    <p class="p_about_teach"> Дорогие дети и уважаемые родители! Приглашаем принять участие в бесплатном мастер-классе по изготовлению ёлочных 
+                                        игрушек из солёного теста в субботу, 18 декабря 2021г.
+                                    </p>
+                                    <p class="p_about_teach"> Лепка из солёного теста — очень увлекательное занятие, которое развивает моторику рук, воображение и фантазию.
+                                        Проведите интересно совместное время со своим ребенком!
+                                    </p>
+                                    <p class="p_about_teach"> <em> *Начало в 11-00ч. С собой ничего приносить не нужно - материалы будут предоставлены. Предварительная запись не требуется.</em> 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg_silver" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h6 class="color_brown">4 декабря - День угощения птиц и белок</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg_orange">
+                                    <p class="p_about_teach"> Наступила зима, и в этот период братья наши меньшие как никогда нуждаются в нашей опеке. Если регулярно подкармливать птиц 
+                                        и зверей в одном и том же месте и в одно и то же время, они привыкнут и с радостью будут ждать вашего появления, став вашими друзьями.
+                                    </p>
+                                    <p class="p_about_teach"> Если вы ещё не оказываете помощь животным, начните это делать именно сегодня, потому что <strong>4 декабря – День 
+                                        угощения птиц и белок</strong>. Кто знает, может именно сегодня, вы спасете беззащитное создание!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg_silver" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h6 class="color_brown">Открытие нового филиала</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body bg_orange">
+                                    <p class="p_about_teach"> На <strong>1 марта 2022 года</strong> запланировано открытие четвертого филиала детского сада "Айтишка", который разместится в новом двухэтажном здании 
+                                        по адресу: <strong><em> Лучистый бульвар, 1 </em></strong>.
+                                    </p>
+                                    <p class="p_about_teach"> Для детей в нем построили спортзал на 100 квадратных метров. В здании есть пищеблок, прачечная, кабинет медицинской сестры, 
+                                        а также музыкальный зал и кабинет творчества, образовательные классы. На первом этаже запроектировали теплый пол, а на окнах установили 
+                                        ограничители, чтобы дети не могли их открыть. На территории детского сада установлено видеонаблюдение. Работает охрана.
+                                    </p>
+                                    <p class="p_about_teach"> Будем рады видеть Вас на дне открытых дверей или провести персональную экскурсию!    
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col col-12 col-sm-12 col-md-8 col-lg-8 d-flex flex-column align-items-center" id="id_classes">
+                    <div class="row w-100">
+                        <h3 class="color_brown">Группы</h3>
+                        <hr>
+                    </div>
+                    <div class="row d-flex justify-content-around mb-5">
+                        <div class="col col-10 mb-3 col-sm-8 col-md-8 mb-md-0 col-lg-4">
+                            <img class="img-fluid" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fus.png?v=1638554968237" >
+                        </div>
+                        <div class="col col-12 col-sm-12 col-md-12 col-lg-6">
+                            <p class="fs-5 text-center"> Максимальное количество детей в одной группе - десять: 
+                            </p>
+                            <ul class="fs-5">
+                                <li class="li_style_snowflake"> все воспитанники получают надлежащее внимание и заботу; </li>
+                                <li class="li_style_snowflake"> индивидуальный подход к ребенку; </li>
+                                <li class="li_style_snowflake"> учитываются способности и интересы каждого ребенка. </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-7 d-flex justify-content-center">
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_1.png?v=1638553390642" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group"> малыши <br> от 1,5 до 3 лет</p>
+                            <p class="text-center">уделяем внимание формированию навыков самообслуживания, развитию сенсорики, речи, памяти и психомоторных функций</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_2.png?v=1638553400645" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group"> младшая группа <br> от 3 до 4 лет</p>
+                            <p class="text-center">уделяем внимание играм с детьми: через них ребенок формирует нормальную манеру 
+                                поведения; прорабатываем развитие речи и памяти
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_3.png?v=1638553407305" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group"> средняя группа <br> от 4 до 5 лет</p>
+                            <p class="text-center">делаем упор на развитие логического мышления и морально-этическое образование</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_4.png?v=1638553419281" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group"> старшая группа <br> от 5 до 6 лет</p>
+                            <p class="text-center">развитие ребенка в старшей группе является определяющим для его подготовки к школе</p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_5.png?v=1638553425318" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group">подготовительная группа <br> от 6 до 7 лет</p>
+                            <p class="text-center">подход направлен на подготовку к школе; под нашим руководством дети ещё больше социализируются 
+                                и приобретают знания об окружающем мире
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_6.png?v=1638553431350" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group">летняя группа<br>разного возраста</p>
+                            <p class="text-center">временная группа, где организуем досуг: 
+                                с детьми играем и читаем, водим их на экскурсии, в театры или музеи
+                            </p>
+                        </div>
+                        <div class="col d-flex flex-column align-items-center showGroup">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fage_7.png?v=1638553438332" class="mt-4" height="35">
+                            <p class="text-center fw-bold one_group">группа по присмотру и уходу</p>
+                            <p class="text-center">без реализации образовательной программы для детей от 2 месяцев до 7 лет</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-sm-12 col-md-4 col-lg-4 d-flex flex-column align-items-center" id="id_education">
+                    <div class="row w-100">
+                        <h3 class="color_brown mt-5 mt-md-0">Образование</h3>
+                        <hr>
+                    </div>
+                    <div class="row d-flex flex-column flex-sm-row flex-md-column flex-lg-column justify-content-evenly align-items-center"  style="white-space: nowrap;">
+                        <div class="col">
+                            <ul class="fs-5 color_brown mb-0">
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> речевое развитие  
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> английский язык </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> чтение </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> письмо </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> арифметика </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul  class="fs-5 color_brown mb-0">
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark word_break"> природоведение </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark word_break"> конструирование </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> этикет </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> шахматы </p>
+                                </li>
+                                <li class="li_style_arrow p-2">
+                                    <p class="p-0 m-0 text-dark"> научный клуб </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- РАЗДЕЛ НАША КОМАНДА -->        
+        <div class="container-fluid" id="id_ourteam">
+            <div class="row">
+                <h2 class="text-center fs-1 pb-3 mb-0 bg_silver color_brown">Наша команда</h2>
+            </div>
+            <div class="row row-cols-2 row-cols-sm-3 row-cols-md-3 row-cols-lg-6 justify-content-evenly mb-4 div_teachers">
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft1.png?v=1638554926485">
+                    <div class="fs-5"> Инесса </div>
+                    <div class="div_prof"> учитель</div>
+                </div>
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft2.png?v=1638554931017">
+                    <div class="fs-5"> Екатерина </div>
+                    <div class="div_prof"> воспитатель</div>
+                </div>
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft3.png?v=1638554938094">
+                    <div class="fs-5"> Айдана </div>
+                    <div class="div_prof"> учитель</div>
+                </div>
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft4.png?v=1638554943664">
+                    <div class="fs-5"> Пётр </div>
+                    <div class="div_prof"> учитель</div>
+                </div>
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft5.png?v=1638554952865">
+                    <div class="fs-5"> Валерия </div>
+                    <div class="div_prof"> медицинский работник </div>
+                </div>
+                <div class="col d-flex flex-column align-items-center pb-3 div_teachers">
+                    <img class="img_teachpic" src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Ft6.png?v=1638554959692">
+                    <div class="fs-5"> Ирина </div>
+                    <div class="div_prof"> воспитатель</div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                <div class="col">
+                    <p class="text fs-5 lh-1.5 m-0 p_about_teach">
+                        Наши воспитатели помогают детям развивать свои творческие способности, поощряют самовыражение, обеспечивая при этом высокий уровень образования 
+                        и позитивное социальное взаимодействие в любящей и заботливой учебной среде.
+                        <!-- Многие из нас обучают маленьких детей более десяти лет; четверть учителей и воспитателей имеют степень магистра. -->
+                    </p>
+                    <p class="text fs-5 lh-1.5 m-0 p_about_teach">
+                        Многие из нас обучают маленьких детей более десяти лет; четверть учителей и воспитателей имеют степень магистра.
+                    </p>
+                </div>
+                <div class="col">
+                    <p class="text fs-5 lh-1.5 m-0 p_about_teach">
+                        Учителя планируют и прорабатывают вместе новые темы и изобретают способы помочь ребенку сосредоточиться, развить критическое мышление, приобрести 
+                        словесные и вычислительные навыки. 
+                        <!-- Мы также следим за тем, чтобы родители оставались вовлеченными в развитие своего ребенка, с помощью еженедельных 
+                            информационных рассылок, собраний и приглашений принять участие в классных мероприятиях. -->
+                    </p>
+                    <p class="text fs-5 lh-1.5 m-0 p_about_teach">
+                        Мы также следим за тем, чтобы родители оставались вовлеченными в развитие своего ребенка, с помощью еженедельных 
+                        информационных рассылок, собраний и приглашений принять участие в классных мероприятиях.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <!-- РАЗДЕЛ "ТВОРЧЕСТВО И СПОРТ" -->
+        <!-- РАЗДЕЛ "ТВОРОЧЕСТВО" -->
+        <div class="container-fluid" id="id_art">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 d-flex justify-content-evenly m-1">
+                <div class="col align-self-center d-flex flex-column justify-content-center align-items-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 ">
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart1.jpeg?v=1638553445758" class="img-fluid">
+                        </div>
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart2.jpg?v=1638553453941" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 ">
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart3.jpg?v=1638553462403" class="img-fluid">
+                        </div>
+                        <div  class="col p-1">
+                            <div id="carousel-one" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart4.jpeg?v=1638553468666" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart5.jpg?v=1638553479375" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart6.jpg?v=1638553489272" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart7.jpg?v=1638553497073" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart8.jpg?v=1638553511837" class="d-block w-100">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fart9.jpg?v=1638553520192" class="d-block w-100">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-one" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel-one" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-flex flex-column justify-content-evenly">
+                    <div>
+                        <h3 class="color_brown text-center mt-3"> Творчество </h3>
+                        <hr>
+                    </div>
+                    <div>
+                        <p class="fs-5 p_about_teach"> Дети от природы любопытны. С того момента, как они обретают контроль над своими конечностями, - они исследуют, наблюдают и 
+                            имитируют, пытаясь понять, как работают вещи и как контролировать себя и свое окружение.
+                        </p>
+                        <p class="fs-5 p_about_teach"> Свобода манипулировать различными материалами естественным образом позволяет исследовать и экспериментировать. 
+                            Творчество помогает детям практиковать широкий спектр навыков, полезных не только для жизни, но и для обучения, формировать 
+                            связи в своем мозгу, помогает им учиться, и это просто весело!
+                        </p>
+                        <ul class="fs-5 color_brown ms-3">
+                            <li>
+                                <p class="p-0 m-0 text-dark"> рисование </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> аппликация </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> лепка </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> плетение </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> музыка </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> мастер-классы </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <!-- РАЗДЕЛ "СПОРТ" -->
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 d-flex justify-content-evenly m-1">
+                <div class="col order-1 order-sm-1 order-md-1 order-lg-2 align-self-center d-flex flex-column justify-content-center align-items-center">
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 ">
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsport1.jpeg?v=1638554856050" class="img-fluid">
+                        </div>
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsport2.jpeg?v=1638554861781" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-2 ">
+                        <div class="col p-1">
+                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fsport3.jpeg?v=1638554869642" class="img-fluid">
+                        </div>
+                        <div class="col p-1 d-flex align-items-center">
+                            <div class="ratio ratio-16x9">
+                                <video src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1/sport_video%20(2).mp4?v=1639833402738" title="Sport" allowfullscreen muted autoplay loop playsinline></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col order-2 order-sm-2 order-md-2 order-lg-1 d-flex flex-column justify-content-evenly">
+                    <div>
+                        <h3 class="color_brown text-center mt-3"> Спорт </h3>
+                        <hr>
+                    </div>
+                    <div>
+                        <p class="fs-5 p_about_teach"> Уроки физического воспитания - это больше, чем просто обучение спортивным приемам и 
+                            соревнование. Они также учат командной работе и сотрудничеству всех детей, независимо от спортивных способностей, 
+                            и, что не менее важно, дают возможность отлично провести время, смеясь и играя вместе!
+                        </p>
+                        <ul  class="fs-5 color_brown ms-3">
+                            <li>
+                                <p class="p-0 m-0 text-dark"> хореография </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> командные игры (футбол, хоккей) </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> теннис </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> плавание </p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> общая физическая подготовка</p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> йога</p>
+                            </li>
+                            <li>
+                                <p class="p-0 m-0 text-dark"> по желанию детей и родителей мы проводим "Весёлые старты" </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br> <br> <br> <br>
+        <!-- ПОДВАЛ С КОНТАКТАМИ -->
+        <footer class="container py-5" id="id_contacts">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 d-flex justify-content-evenly">
+                <div class="col mt-4">
+                    <h5 class="color_brown"> О нас </h5>
+                    <hr>
+                    <div class="text-small">
+                        <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Flogo.png?v=1638553543807" width="35">
+                        Сеть детских садов "Айтишка" успешно работает с малышами с 11 месяцев до школы с 2014 года.
+                        Мы стремимся создать для вашего ребенка теплую, дружелюбную и счастливую атмосферу. 
+                        Мы гордимся тем, что служим обществу и помогаем малышам готовиться ко взрослой жизни со всем её многообразием.
+                        <a class="link fs-5 text-dark text-decoration-none link_hover" href="#id_main">
+                            <br>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-up-square color_brown" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                            </svg>
+                            НАВЕРХ
+                        </a>
+                    </div>
+                </div>
+                <div class="col mt-4">
+                    <h5 class="color_brown">Мы в соцсетях</h5>
+                    <hr>
+                    <div class="d-flex flex-column">
+                        <ul class="list-unstyled d-flex justify-content-evenly">
+                            <li>
+                                <a class="link link_hover" href="#" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bootstrap color_brown" viewBox="0 0 16 16">
+                                        <path d="M5.062 12h3.475c1.804 0 2.888-.908 2.888-2.396 0-1.102-.761-1.916-1.904-2.034v-.1c.832-.14 1.482-.93 1.482-1.816 0-1.3-.955-2.11-2.542-2.11H5.062V12zm1.313-4.875V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23H6.375zm0 3.762V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377H6.375z"/>
+                                        <path d="M0 4a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v8a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V4zm4-3a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3H4z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link link_hover" href="https://www.instagram.com/irinapstnv" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram color_brown" viewBox="0 0 16 16">
+                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="link link_hover" href="mailto:pstnv@mail.ru" target="_blank">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope color_brown" viewBox="0 0 16 16">
+                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="tel:8800-0000-000" class="fs-3 text-dark text-decoration-none align-self-center mt-5 link_hover link_phone">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-telephone-inbound color_brown" viewBox="0 0 16 16">
+                                <path d="M15.854.146a.5.5 0 0 1 0 .708L11.707 5H14.5a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5v-4a.5.5 0 0 1 1 0v2.793L15.146.146a.5.5 0 0 1 .708 0zm-12.2 1.182a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                            </svg>
+                            8800-0000-000
+                        </a>
+                    </div>
+                </div>
+                <div class="col col-11 col-sm-11 col-md-4 col-lg-3 mt-4">
+                    <h5 class="color_brown" style="white-space: nowrap;">Свяжитесь со мной</h5>
+                    <hr>
+                    <form>
+                        <div class="mb-2">
+                            <input type="text" class="form-control form-control-sm rounded-0 shadow-none fs-5 input_footer" id="inputname_footer" aria-describedby="emailHelp" placeholder="Имя">
+                        </div>
+                        <div class="mb-2">
+                            <input type="tel" class="form-control  form-control-sm rounded-0 shadow-none fs-5 input_footer" id="inputphone_footer" aria-describedby="phoneHelp" placeholder="Телефон">
+                        </div>
+                        <div class="mb-1">
+                            <input type="email" class="form-control form-control-sm rounded-0 shadow-none fs-5 input_footer" id="inputemail_footer" aria-describedby="emailHelp" placeholder="Email">
+                        </div>
+                        <div class="mb-2 form-check">
+                            <input type="checkbox" class="form-check-input shadow-none checkbox_footer" id="exampleCheck1">
+                            <label class="form-check-label label_size" for="exampleCheck1" style="text-align: justify;">Я ознакомлен (-на) и согласен (-на) с 
+                            политикой обработки персональных данных</label>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="submit" value="button_submit_footer" id="submit_footer" class="btn shadow-none text-light fs-5 button_footer">ОТПРАВИТЬ</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+        <!-- МОДАЛЬНОЕ ОКНО - ЗАПИСАТЬСЯ НА ЭКСКУРСИЮ -->
+        <div class="modal" id="exampleModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content  shadow-none" style="width: 100%;">
+                    <div class="modal-header border_orange">
+                        <h5 class="modal-title w-100 text-center"> Экскурсия для Вас</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-2">
+                                <div class="col">
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint1.png?v=1638553562927" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> График работы </b> с 07-00ч. до 19-00ч. </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint2.png?v=1638553569897" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> Группы </b> до 10 человек </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint3.png?v=1638607658867" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> Питание </b> четырехразовое с учетом индивидуальных особенностей ребенка </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint4.png?v=1638554822963" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> Ежедневный осмотр медработником </b> </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint5.png?v=1638553599405" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> Видеонаблюдение </b> (онлайн) и охрана </p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint6.png?v=1638554765611" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> <b> Англоязычная среда </b></p>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <div class="col-2 me-1">
+                                            <img src="https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fpoint7.png?v=1638554773541" class="img-fluid" style="min-width: 35px;">
+                                        </div>
+                                        <div class="col">
+                                            <p class="text"> Возможность пребывания воспитанников в <b> выходные и праздничные дни </b> </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <p class="text text-center fs-6 fst-italic">Заполните форму — и мы с Вами свяжемся!</p>
+                                    <form>
+                                        <div class="mb-3">
+                                            <input type="text" class="form-control shadow-none input_callus" aria-describedby="nameHelp" placeholder="Имя">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="tel" class="form-control shadow-none input_callus" aria-describedby="phoneHelp" placeholder="Телефон">
+                                        </div>
+                                        <div class="mb-3">
+                                            <input type="email" class="form-control shadow-none input_callus" aria-describedby="emailHelp" placeholder="Email">
+                                        </div>
+                                        <div class="mb-3 form-floating">
+                                            <textarea class="form-control shadow-none input_callus" style="height: 100px" id="floatingTextarea"></textarea>                    
+                                            <label for="floatingTextarea" class="text">Ваше сообщение (необязательно)</label>
+                                        </div>
+                                        <div class="mb-3 form-check">
+                                            <input type="checkbox" class="form-check-input shadow-none check_callus">
+                                            <label class="form-check-label" for="flexCheckDefault">Я ознакомлен (-на) и согласен (-на) с 
+                                            политикой обработки персональных данных</label>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <button type="submit" value="button_submit_modal" id="submit_modal" class="btn shadow-none btn_callus">ОТПРАВИТЬ</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/TextPlugin.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+        <script src="scriptIndex.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,520 @@
+html {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html *::-moz-selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+*::-moz-selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+*::selection {
+	background-color: rgb(68, 73, 65, 0.5);
+	color: white;
+}
+
+button,
+button:active,
+button:focus {
+	outline: none !important;
+}
+
+.accordion-button:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+body {
+	background-color: orange;
+	padding: 0px !important;
+	margin: 0px !important;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.navbar {
+	background-color: orange;
+}
+
+.navbar-brand {
+	font-family: 'Murecho', sans-serif;
+}
+
+.row_margin {
+	margin-top: 400px;
+	margin-bottom: 20px;
+}
+
+.div_main {
+	min-height: 1000px;
+	background-image: url(https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1/main.jpeg?v=1640637506184);
+	/*background-attachment:fixed;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.p_callout {
+	font-style: italic;
+	font-size: 24px;
+	padding: 0px;
+}
+
+.button_callout {
+	margin-left: 40px;
+	border-radius: 2.5rem;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: brown;
+	-webkit-animation-name: glowing;
+	animation-name: glowing;
+}
+
+@-webkit-keyframes glowing {
+	0% {
+		background-color: rgb(146, 41, 41);
+		-webkit-box-shadow: 0 0 5px rgb(146, 41, 41);
+		box-shadow: 0 0 5px rgb(146, 41, 41);
+	}
+	50% {
+		background-color: rgb(184, 55, 55);
+		-webkit-box-shadow: 0 0 20px rgb(184, 55, 55);
+		box-shadow: 0 0 20px rgb(184, 55, 55);
+	}
+	100% {
+		background-color: rgb(146, 41, 41);
+		-webkit-box-shadow: 0 0 5px rgb(146, 41, 41);
+		box-shadow: 0 0 5px rgb(146, 41, 41);
+	}
+}
+
+@keyframes glowing {
+	0% {
+		background-color: rgb(146, 41, 41);
+		-webkit-box-shadow: 0 0 5px rgb(146, 41, 41);
+		box-shadow: 0 0 5px rgb(146, 41, 41);
+	}
+	50% {
+		background-color: rgb(184, 55, 55);
+		-webkit-box-shadow: 0 0 20px rgb(184, 55, 55);
+		box-shadow: 0 0 20px rgb(184, 55, 55);
+	}
+	100% {
+		background-color: rgb(146, 41, 41);
+		-webkit-box-shadow: 0 0 5px rgb(146, 41, 41);
+		box-shadow: 0 0 5px rgb(146, 41, 41);
+	}
+}
+
+.button_callout {
+	-webkit-animation: glowing 1300ms infinite;
+	animation: glowing 1300ms infinite;
+}
+
+.row_blocks {
+	background-color: rgb(211, 211, 211, 0.8);
+}
+
+.card_oneblock {
+	background-color: pink;
+	font-family: 'Caveat', cursive;
+	font-size: 24px !important;
+	/*width: 220px !important;*/
+	max-width: 220px !important;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.p_height {
+	height: calc(var(--line-height) * 2em) !important;
+	line-height: var(--line-height) !important;
+	--line-height: 1.5 !important;
+}
+
+.img_principes {
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+	max-width: 90%;
+}
+
+.border_orange {
+	border-bottom: 1px solid orange !important;
+}
+
+.input_callus {
+	border-radius: 10px;
+}
+
+.input_callus:focus {
+	border: 1px solid orange;
+}
+
+.btn_callus {
+	background-color: orange;
+	border-radius: 10px;
+}
+
+.check_callus:checked {
+	border: 1px solid orange;
+	background-color: orange;
+}
+
+.one_group {
+	height: calc(var(--line-height) * 2.7em) !important;
+	line-height: var(--line-height) !important;
+	--line-height: 1.5 !important;
+}
+
+.bg_silver {
+	background-color: lightgrey !important;
+}
+
+.div_teachers {
+	background: -o-linear-gradient(top, lightgrey 55%, orange 0%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(55%, lightgrey), color-stop(0%, orange));
+	background: linear-gradient(to bottom, lightgrey 55%, orange 0%);
+}
+
+.img_teachpic {
+	width: 150px;
+}
+
+.div_prof {
+	font-size: 12px;
+	border-top: 1px dashed black;
+}
+
+.p_about_teach {
+	text-align: justify;
+	text-indent: 5%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.border_silver {
+	border: 2px solid lightgrey;
+}
+
+.color_brown {
+	color: brown;
+}
+
+.bg_orange {
+	background-color: orange !important;
+}
+
+.bg_light_orange {
+	background-color: rgb(255, 165, 0, 0.5) !important;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 0px 10px 0px 10px;
+}
+
+.input_footer:focus {
+	border: 1px solid #2e0000;
+}
+
+.checkbox_footer:checked {
+	border: 1px solid #2e0000;
+	background-color: #2e0000;
+}
+
+.button_footer {
+	border-radius: 2.5rem;
+	background-color: brown;
+}
+
+.label_size {
+	font-size: 12px;
+}
+
+.li_style_snowflake {
+	list-style-type: '*';
+	-webkit-padding-start: 1ch;
+	padding-inline-start: 1ch;
+}
+
+.li_style_snowflake::marker {
+	content: '*';
+	font-size: 2rem !important;
+}
+
+.li_style_arrow {
+	list-style-type: '➤';
+	-webkit-padding-start: 1ch;
+	padding-inline-start: 1ch;
+}
+
+.li_style_arrow::marker {
+	content: '➤';
+	font-size: 1.5rem !important;
+}
+
+.word_break {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.body_walls {
+	background-image: url(https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fbg_fall.jpg?v=1639032295641);
+	background-repeat: repeat;
+	background-size: contain;
+	background-position: center center;
+	background-color: #fff8f0;
+}
+
+.bg_milky {
+	background-color: #ecece7;
+}
+
+.color_blue {
+	color: #00498D;
+}
+
+.container_img img {
+	border: 6px solid #ecece7;
+}
+
+.container_img .col {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+
+/********* QUIZ FORM *********/
+
+.quizForm {
+	margin: 20px;
+	padding: 10px 50px;
+	width: 600px;
+	height: 800px;
+	border-radius: 5px;
+	background-color: #ffffff;
+}
+
+.quizForm ul {
+	list-style: none;
+	padding: 0;
+}
+
+.quizForm ul li {
+	padding: 3px;
+	border-radius: 10px;
+	border: 1px solid rgb(68, 73, 65, 0.3);
+}
+
+.quizForm .labelRadio {
+	margin-left: 5px;
+	font-size: 25px;
+	vertical-align: middle;
+}
+
+.inputRadio {
+	height: 30px;
+	width: 30px;
+	vertical-align: middle;
+	border: 1px solid red;
+}
+
+#conclusion {
+	min-height: 30px;
+}
+
+.submitBtn {
+	border-radius: 10px;
+	border: none;
+	background-color: rgb(255, 165, 0, 0.5);
+}
+
+#adviceText {
+	min-height: 60px;
+	font-size: 20px;
+}
+
+.advicePicture {
+	max-height: 400px;
+	max-width: 100%;
+	/* margin-top: auto; */
+	margin-bottom: 50px;
+}
+
+@media all and (max-width:1200px) {
+	.img_principes {
+		max-width: 100%;
+	}
+}
+
+@media all and (max-width:800px) {
+	.img_logo {
+		width: 70px;
+	}
+	.navbar-brand {
+		font-size: 24px !important;
+	}
+	.link_phone {
+		font-size: 22px !important;
+	}
+	.div_main {
+		min-height: unset;
+		background-repeat: no-repeat;
+	}
+	.bg_light_orange {
+		background-color: rgb(255, 165, 0, 0.4) !important;
+		border-top-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+		padding: 0px 5px 0px 5px;
+	}
+	.img_principes {
+		max-width: 90%;
+	}
+	.card_oneblock {
+		font-size: 20px !important;
+	}
+	.frame_color img {
+		border: 4px solid #ecece7;
+	}
+}
+
+@media all and (max-width:650px) {
+	.quizForm {
+		padding: 10px 30px;
+		margin: 20px;
+		width: calc(100% - 40px);
+		height: unset;
+		min-height: 650px;
+	}
+	.advicePicture {
+		max-height: 270px;
+	}
+}
+
+@media all and (max-width:575px) {
+	.img_logo {
+		width: 50px;
+	}
+	.navbar-brand {
+		font-size: 20px !important;
+	}
+	.link_phone {
+		font-size: 18px !important;
+	}
+	.div_main {
+		background-image: unset;
+	}
+	.div_callout_style {
+		min-height: 400px;
+		background-image: url(https://cdn.glitch.me/0458467d-2d1d-4c3f-9fdf-f63fccb79ff1%2Fmain_small.jpeg?v=1639039015370);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center center;
+		padding-bottom: 20px;
+	}
+	.row_margin {
+		margin-top: unset;
+		margin-bottom: unset;
+	}
+	.button_callout {
+		margin-left: unset;
+	}
+	.row_blocks {
+		background-color: rgb(211, 211, 211);
+	}
+	.card_oneblock {
+		font-size: 20px !important;
+	}
+	#adviceText {
+		font-size: 18px;
+	}
+}
+
+@media all and (max-width:400px) {
+	.img_logo {
+		width: 45px;
+	}
+	.navbar-brand {
+		font-size: 18px !important;
+	}
+	.link_phone {
+		font-size: 16px !important;
+	}
+	.div_callout_style {
+		min-height: 330px;
+	}
+	.button_callout {
+		border-radius: 2.5rem;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.card_oneblock {
+		font-size: 19px !important;
+	}
+	.text-small {
+		font-size: 12px !important;
+	}
+	.quizForm {
+		padding: 10px;
+	}
+}
+
+@media all and (max-width:330px) {
+	.img_logo {
+		width: 35px;
+	}
+	.navbar-brand {
+		font-size: 16px !important;
+	}
+	.link_phone {
+		font-size: 14px !important;
+	}
+	.div_callout_style {
+		min-height: 300px;
+	}
+	.card_oneblock {
+		font-size: 14px !important;
+	}
+}
+
+@media (any-pointer: coarse) {
+	.img_principes:hover {
+		-webkit-transform: scaleX(-1);
+		-ms-transform: scaleX(-1);
+		transform: scaleX(-1);
+		-webkit-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+}
+
+@media (hover: hover) {
+	.nav-link:hover,
+	.stretched-link:hover,
+	.link_hover:hover,
+	.link_hover:hover svg {
+		color: white !important;
+	}
+	.img_principes:hover {
+		-webkit-transform: scaleX(-1);
+		-ms-transform: scaleX(-1);
+		transform: scaleX(-1);
+		-webkit-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+	.div_main {
+		background-attachment: fixed;
+		background-position: top center;
+	}
+}
