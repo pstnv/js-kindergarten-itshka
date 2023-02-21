@@ -2,7 +2,7 @@
 <a href="https://kindergarten-it-shka.glitch.me/"> https://kindergarten-it-shka.glitch.me </a>
 
 <div align="center">
-  <img src="https://cdn.glitch.global/ece60b40-3830-4d48-bb12-fa238aabf422/picPreview_3.png?v=1661081037165">
+  <img src="src/pics/preview.png">
 </div>
 <br>
 
